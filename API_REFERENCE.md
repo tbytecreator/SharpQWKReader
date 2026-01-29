@@ -3,16 +3,14 @@
 ## 🔌 Endpoints da Aplicação
 
 ### 📌 Base URL
-```
+
 http://localhost       # Com Docker
 http://localhost:5000  # Com dotnet run
-```
-
----
 
 ## 📋 Endpoints
 
 ### 1. GET `/` ou `/qwk/index`
+
 **Descrição:** Página inicial com formulário de upload
 
 **Exemplo de Requisição:**
@@ -31,6 +29,7 @@ Host: localhost
 ---
 
 ### 2. POST `/qwk/uploadpackage`
+
 **Descrição:** Upload e processamento do arquivo QWK
 
 **Parâmetros:**

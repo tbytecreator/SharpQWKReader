@@ -255,11 +255,6 @@ SharpQWKReader/
 │   ├── QWK.csproj
 │   └── QWKModel.cs
 │
-├── SharpQWKReader/                   # App desktop antigo
-│   ├── SharpQWKReader.csproj
-│   ├── Form1.cs
-│   └── Program.cs
-│
 ├── SharpQWKReader.Web/               # ⭐ APP WEB NOVA
 │   ├── Controllers/
 │   │   └── QWKController.cs
