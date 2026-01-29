@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "QWK Reader";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">SharpQWK Reader</h1>
+            <p class="text-muted">Upload and read QWK email packages</p>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upload QWK Package</h5>
+                    <form method="post" action="@Url.Action("UploadPackage", "QWK")" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Select QWK File</label>
+                            <input type="file" class="form-control" id="file" name="file" accept=".qwk" required>
+                            <small class="text-muted">Please select a valid .qwk file</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Upload and Read</button>
+                    </form>
+                </div>
+            </div>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-warning mt-3" role="alert">
+                    @ViewBag.Message
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .card {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+</style>

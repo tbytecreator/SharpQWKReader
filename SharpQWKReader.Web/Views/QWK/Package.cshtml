@@ -1,0 +1,52 @@
+@model SharpQWKReader.Web.Models.PackageViewModel
+
+@{
+    ViewData["Title"] = "QWK Package";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="mb-4">BBS Information</h1>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.BBSInfo.BbsName</h5>
+                            <p class="card-text">
+                                <strong>Location:</strong> @Model.BBSInfo.BbsLocation<br>
+                                <strong>Phone:</strong> @Model.BBSInfo.BbsPhone<br>
+                                <strong>Sysop:</strong> @Model.BBSInfo.SysopName<br>
+                                <strong>User:</strong> @Model.BBSInfo.UserName<br>
+                                <strong>Messages:</strong> @Model.BBSInfo.MessagesInPacket
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mb-3">Forums (@Model.Forums.Count)</h2>
+            <div class="row">
+                @foreach (var forum in Model.Forums)
+                {
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">@forum.Name</h5>
+                                <p class="card-text">ID: @forum.ID</p>
+                                <a href="@Url.Action("Forum", new { forumId = forum.ID })" class="btn btn-sm btn-primary">
+                                    View Messages (@forum.NumberOfMessages)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="mt-4">
+                <a href="@Url.Action("Index")" class="btn btn-secondary">Back to Upload</a>
+            </div>
+        </div>
+    </div>
+</div>

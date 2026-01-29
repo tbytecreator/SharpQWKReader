@@ -1,0 +1,31 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
+
+WORKDIR /src
+
+# Copiar arquivos de projeto
+COPY ["SharpQWKReader.Web/SharpQWKReader.Web.csproj", "SharpQWKReader.Web/"]
+COPY ["QWK/QWK.csproj", "QWK/"]
+
+# Restaurar dependências
+RUN dotnet restore "SharpQWKReader.Web/SharpQWKReader.Web.csproj"
+
+# Copiar código-fonte
+COPY . .
+
+# Publicar
+RUN dotnet publish "SharpQWKReader.Web/SharpQWKReader.Web.csproj" -c Release -o /app/publish
+
+# Runtime stage
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+
+WORKDIR /app
+
+COPY --from=builder /app/publish .
+
+# Criar diretórios necessários
+RUN mkdir -p /app/wwwroot/uploads
+
+EXPOSE 80
+EXPOSE 443
+
+ENTRYPOINT ["dotnet", "SharpQWKReader.Web.dll"]

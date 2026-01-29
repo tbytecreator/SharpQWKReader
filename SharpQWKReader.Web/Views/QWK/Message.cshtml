@@ -1,0 +1,40 @@
+@model QWK.Message
+
+@{
+    ViewData["Title"] = "Message";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">@Model.Subject</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <strong>From:</strong> @Model.From<br>
+                            <strong>Date:</strong> @Model.Date @Model.Time
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <strong>To:</strong> @Model.To<br>
+                            <strong>Number:</strong> @Model.Number
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="message-body" style="white-space: pre-wrap; font-family: monospace; background-color: #f8f9fa; padding: 15px; border-radius: 5px;">
+                        @Model.Body
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+                <a href="@Url.Action("Index")" class="btn btn-primary">Back to Upload</a>
+            </div>
+        </div>
+    </div>
+</div>

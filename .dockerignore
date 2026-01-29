@@ -1,0 +1,12 @@
+.git
+.gitignore
+.vs
+.vscode
+bin
+obj
+packages
+*.user
+*.suo
+*.sln.DotSettings
+.DS_Store
+node_modules

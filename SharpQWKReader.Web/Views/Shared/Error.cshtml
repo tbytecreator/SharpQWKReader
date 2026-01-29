@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Error!</h4>
+                <p>An error occurred while processing your request.</p>
+            </div>
+            <a href="@Url.Action("Index", "QWK")" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+</div>
