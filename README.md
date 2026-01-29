@@ -67,7 +67,7 @@ chmod +x run-web.sh
 
 ## 📁 Estrutura do Projeto
 
-'''
+```
 SharpQWKReader/
 ├── QWK/                           # Biblioteca QWK (reutilizada)
 ├── SharpQWKReader.Web/            # ⭐ NOVO - Aplicação Web
@@ -87,7 +87,7 @@ SharpQWKReader/
 │   └── Dockerfile                 # Containerização
 ├── docker-compose.web.yml         # Compose Web
 └── WEB_REFACTORING.md            # Documentação
-'''
+```
 
 ## 🎯 Funcionalidades
 
