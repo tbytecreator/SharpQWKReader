@@ -3,7 +3,7 @@
 ║         SharpQWK Reader - Refatoração para Web Completa                   ║
 ║                                                                           ║
 ║  De: Windows Forms (.NET Framework 4.7.2)                                 ║
-║  Para: ASP.NET Core 8.0 Web Application                                   ║
+║  Para: ASP.NET Core 10.0 Web Application                                  ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 
 
@@ -14,9 +14,12 @@ SharpQWKReader.Web/
 │
 ├─ 🎮 CONTROLLERS
 │  └─ QWKController.cs
-│     ├─ Index() → Upload form
+│     ├─ Index() → Grid de pacotes + Upload form
 │     ├─ UploadPackage() → Process file
-│     ├─ Package() → Show BBS info
+│     ├─ UploadedPackages() → Lista de pacotes enviados
+│     ├─ OpenPackage() → Descompacta e mostra BBS info
+│     ├─ DeletePackage() → Remove pacote
+│     ├─ Package() → Show BBS info (legacy)
 │     ├─ Forum() → List messages
 │     └─ Message() → Read message
 │
@@ -29,14 +32,21 @@ SharpQWKReader.Web/
 │     └─ GetMessage()
 │
 ├─ 📦 MODELS
-│  ├─ QWKModels.cs → Message, BBSInfo, Forum
-│  └─ ViewModels.cs → PackageViewModel, ForumViewModel
-│
-├─ 🎨 VIEWS (Razor)
-│  ├─ QWK/
-│  │  ├─ Index.cshtml ..................... Upload
-│  │  ├─ Package.cshtml ..................  BBS Info + Forums
-│  │  ├─ Forum.cshtml ...................   Messages List
+│  ├─ QWKModels.cs → Message, BBSInfo, Forum, Methods
+│  └─ ViewModels.cs
+│     ├─ PackageViewModel
+│     ├─ ForumViewModel
+│     ├─ UploadedPackageViewModel
+│     ├─ UploadedPackagesListViewModel Upload + Grid de pacotes
+│  │  ├─ UploadedPackages.cshtml .....  Lista de pacotes (legacy)
+│  │  ├─ OpenPackage.cshtml .........  BBS Info + Fóruns
+│  │  ├─ Package.cshtml .............. BBS Info + Forums (legacy)
+│  │  ├─ Forum.cshtml ...............  Messages List
+│  │  └─ Message.cshtml .............  Message Body
+│  └─ Shared/
+│     ├─ _Layout.cshtml ............. Main template
+│     ├─ _ViewStart.cshtml ........... View init
+│     └─ Error.cshtml ...............   Messages List
 │  │  └─ Message.cshtml .................   Message Body
 │  └─ Shared/
 │     ├─ _Layout.cshtml ................. Main template
@@ -52,7 +62,7 @@ SharpQWKReader.Web/
 ├─ 🐳 DEPLOYMENT
 │  ├─ Dockerfile ........................ Multi-stage build
 │  └─ Procfile .......................... Heroku support
-│
+│10
 └─ 📋 PROJECT
    └─ SharpQWKReader.Web.csproj ........ .NET 8.0 project
 
@@ -150,7 +160,7 @@ SharpQWKReader/
   │ Plataforma          │ ❌ Apenas Windows    │ ✅ Multiplataforma   │
   │ Interface           │ ❌ Desktop (WinForms)│ ✅ Web (HTML/CSS)    │
   │ Mobile              │ ❌ Não               │ ✅ Sim (Responsivo)  │
-  │ Framework           │ ❌ .NET 4.7.2        │ ✅ .NET 8.0          │
+  │ Framework           │ ❌ .NET 4.7.2        │ ✅ .NET 10.0         │
   │ Padrão              │ ❌ UI Acoplada       │ ✅ MVC Pattern       │
   │ Deploy              │ ❌ Manual            │ ✅ Docker            │
   │ Escalabilidade      │ ❌ Difícil           │ ✅ Fácil             │
@@ -163,41 +173,41 @@ SharpQWKReader/
 🎯 FLUXO DE USO
 ═══════════════════════════════════════════════════════════════════════════
 
-  1. UPLOAD
-     ┌─────────────────────────┐
-     │ Acessar localhost       │
-     │ Selecionar arquivo .qwk │
-     │ Clique "Upload"         │
-     └──────────┬──────────────┘
-                ↓
-  2. BBS INFO
-     ┌──────────────────────────┐
-     │ Ver informações do BBS   │
-     │ Nome, localização, etc   │
-     │ Listar fóruns            │
-     └──────────┬───────────────┘
-                ↓
-  3. FÓRUM
-     ┌──────────────────────────┐
-     │ Selecionar um fórum      │
-     │ Ver lista de mensagens   │
-     │ Tabela com de/para       │
-     └──────────┬───────────────┘
-                ↓
-  4. MENSAGEM
-     ┌──────────────────────────┐
-     │ Clicar em "Read"         │
-     │ Ver conteúdo completo    │
-     │ Formatação preservada    │
-     └──────────────────────────┘
+  1. PÁGINA INICIAL
+     ┌─────────────────────────────────────────┐
+     │ Formulário de Upload no topo            │
+     │ Grade de Pacotes Enviados abaixo        │
+     │ Botões: Open (abrir), Delete (deletar)  │
+     └──────────────┬──────────────────────────┘
+                    ↓
+  2. ABRIR PACOTE
+     ┌─────────────────────────────────────────┐
+     │ Descompacta arquivo .qwk temporariamente│
+     │ Exibe Informações do BBS                │
+     │ Mostra tabela de Fóruns/Conferências    │
+     └──────────────┬──────────────────────────┘
+                    ↓
+  3. EXPLORAR FÓRUM
+     ┌─────────────────────────────────────────┐
+     │ Selecionar um fórum                     │
+     │ Ver lista de mensagens                  │
+     │ Tabela com De/Para/Assunto              │
+     └──────────────┬──────────────────────────┘
+                    ↓
+  4. LER MENSAGEM
+     ┌─────────────────────────────────────────┐
+     │ Clicar em "Read"                        │
+     │ Ver conteúdo completo da mensagem       │
+     │ Formatação preservada                   │
+     └─────────────────────────────────────────┘
 
 
 📈 NÚMEROS DO PROJETO
 ═══════════════════════════════════════════════════════════════════════════
 
-  Arquivos Criados:      22+
-  Linhas de Código:      ~1500+
-  Views (Cshtml):        5
+  Arquivos Criados:      25+
+  Linhas de Código:      ~2000+
+  Views (Cshtml):        7
   Controladores:         1
   Serviços:              1
   Models:                5+
@@ -221,12 +231,15 @@ SharpQWKReader/
   ✅ Acessibilidade WCAG
 
   BACKEND
-  ✅ ASP.NET Core 8.0
+  ✅ ASP.NET Core 10.0
   ✅ MVC Pattern implementado
   ✅ Dependency Injection
   ✅ Logging integrado
   ✅ Error handling robusto
   ✅ Service layer reutilizável
+  ✅ Gestão de sessões
+  ✅ Limpeza de arquivos temporários
+  ✅ CRUD de pacotes (Upload, List, Open, Delete)
 
   DEVOPS
   ✅ Dockerfile multi-stage
@@ -243,7 +256,7 @@ SharpQWKReader/
 
 
 🛠️ STACK TÉCNICO
-═══════════════════════════════════════════════════════════════════════════
+═════════════════════════════10═════════════════════════════════════════════
 
   LANGUAGE:     C# 12.0
   FRAMEWORK:    ASP.NET Core 8.0
@@ -256,16 +269,24 @@ SharpQWKReader/
   HOSTING:      Azure/AWS/GCP/Heroku
 
 
-✅ CHECKLIST FINAL
-═══════════════════════════════════════════════════════════════════════════
-
-  ✅ Estrutura ASP.NET Core 8.0 criada
-  ✅ Controlador MVC implementado
+✅ CHECKLIST FINAL10.0 criada
+  ✅ Upgrade de .NET 8.0 → 10.0 realizado
+  ✅ Controlador MVC com CRUD de pacotes
   ✅ Serviço com Dependency Injection
-  ✅ Views Razor responsivas
+  ✅ Views Razor responsivas (7 views)
   ✅ Bootstrap 5 integrado
+  ✅ Sistema de Upload integrado
+  ✅ Lista e gerenciamento de pacotes
+  ✅ Visualização de informações do BBS
+  ✅ Descompactação dinâmica de .qwk
+  ✅ Sessões para rastreamento de pacotes abertos
+  ✅ Limpeza automática de arquivos temporários
   ✅ Dockerfile multi-stage
   ✅ Docker Compose configurado
+  ✅ Scripts de execução
+  ✅ Documentação completa
+  ✅ Verificador de estrutura
+  ✅ .gitignore atualizado (uploads/)do
   ✅ Scripts de execução
   ✅ Documentação completa
   ✅ Verificador de estrutura
@@ -314,9 +335,9 @@ SharpQWKReader/
 
               Todos os arquivos estão em sua pasta original
 
-
-📞 SUPORTE
-═══════════════════════════════════════════════════════════════════════════
+e Melhorado com ❤️  em C# e .NET                             ║
+║  Data: 29 de Janeiro de 2026                                             ║
+║  Status: ✅ Completo, Funcional e Pronto para Produção═══════════════════
 
   Documentação:    Veja arquivos .md nesta pasta
   Docker:          https://docs.docker.com
