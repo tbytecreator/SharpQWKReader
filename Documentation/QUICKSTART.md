@@ -127,7 +127,3 @@ Veja documentação completa em:
 - `README_WEB.md` - Guia completo
 - `WEB_REFACTORING.md` - Detalhes técnicos
 - `REFACTORING_SUMMARY.md` - Análise antes/depois
-
----
-
-**Criado com ❤️ em C# e .NET**
