@@ -1,14 +1,17 @@
+@using SharpQWKReader.Web.Models;
+@model UploadedPackagesListViewModel
+
 @{
     ViewData["Title"] = "QWK Reader";
 }
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-12">
             <h1 class="mb-4">SharpQWK Reader</h1>
             <p class="text-muted">Upload and read QWK email packages</p>
 
-            <div class="card">
+            <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Upload QWK Package</h5>
                     <form method="post" action="@Url.Action("UploadPackage", "QWK")" enctype="multipart/form-data">
@@ -17,8 +20,67 @@
                             <input type="file" class="form-control" id="file" name="file" accept=".qwk" required>
                             <small class="text-muted">Please select a valid .qwk file</small>
                         </div>
-                        <button type="submit" class="btn btn-primary">Upload and Read</button>
+                        <button type="submit" class="btn btn-primary">Upload</button>
                     </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">Uploaded QWK Packages</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.Packages.Count == 0)
+                    {
+                        <div class="alert alert-info" role="alert">
+                            <i class="bi bi-info-circle"></i>
+                            No packages uploaded yet. Upload a QWK package above to get started.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th><i class="bi bi-file-earmark"></i> Filename</th>
+                                        <th class="text-end"><i class="bi bi-hdd"></i> Size</th>
+                                        <th><i class="bi bi-calendar-event"></i> Upload Date</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var package in Model.Packages)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@package.FileName</strong>
+                                            </td>
+                                            <td class="text-end">
+                                                <small class="text-muted">@FormatFileSize(package.FileSize)</small>
+                                            </td>
+                                            <td>
+                                                <small class="text-muted">@package.UploadDate.ToString("yyyy-MM-dd HH:mm:ss")</small>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="@Url.Action("OpenPackage", "QWK", new { fileName = package.FileName })" 
+                                                   class="btn btn-sm btn-primary" 
+                                                   title="Open package">
+                                                    <i class="bi bi-folder-open"></i> Open
+                                                </a>
+                                                <a href="@Url.Action("DeletePackage", "QWK", new { fileName = package.FileName })" 
+                                                   class="btn btn-sm btn-danger" 
+                                                   onclick="return confirm('Are you sure you want to delete this package?');"
+                                                   title="Delete package">
+                                                    <i class="bi bi-trash"></i> Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
                 </div>
             </div>
 
@@ -39,4 +101,28 @@
     .card {
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+    .table-responsive {
+        border-radius: 0.375rem;
+    }
+    .btn-sm {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+    }
 </style>
+
+@functions {
+    private string FormatFileSize(long bytes)
+    {
+        string[] sizes = { "B", "KB", "MB", "GB", "TB" };
+        double len = bytes;
+        int order = 0;
+
+        while (len >= 1024 && order < sizes.Length - 1)
+        {
+            order++;
+            len = len / 1024;
+        }
+
+        return $"{len:0.##} {sizes[order]}";
+    }
+}

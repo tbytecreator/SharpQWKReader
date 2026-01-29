@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using QWK;
 using SharpQWKReader.Web.Models;
 using SharpQWKReader.Web.Services;
-using System.IO;
 
 namespace SharpQWKReader.Web.Controllers;
 
@@ -21,7 +20,35 @@ public class QWKController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        try
+        {
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            var model = new UploadedPackagesListViewModel();
+
+            if (Directory.Exists(uploadsFolder))
+            {
+                var di = new DirectoryInfo(uploadsFolder);
+                var files = di.GetFiles("*.qwk");
+
+                foreach (var file in files.OrderByDescending(f => f.CreationTime))
+                {
+                    model.Packages.Add(new UploadedPackageViewModel
+                    {
+                        FileName = file.Name,
+                        FilePath = file.FullName,
+                        FileSize = file.Length,
+                        UploadDate = file.CreationTime
+                    });
+                }
+            }
+
+            return View(model);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error loading packages on index");
+            return View(new UploadedPackagesListViewModel());
+        }
     }
 
     [HttpPost]
@@ -46,12 +73,7 @@ public class QWKController : Controller
                 file.CopyTo(stream);
             }
 
-            _qwkService.OpenQWKPacket(filePath);
-            var bbsInfo = _qwkService.GetBBSInfo();
-            
-            HttpContext.Session.SetString("PackagePath", filePath);
-
-            return RedirectToAction(nameof(Package), new { bbsId = bbsInfo.BbsId });
+            return RedirectToAction(nameof(UploadedPackages));
         }
         catch (Exception ex)
         {
@@ -59,6 +81,132 @@ public class QWKController : Controller
             ModelState.AddModelError("", $"Error: {ex.Message}");
             return View("Index");
         }
+    }
+
+    public IActionResult UploadedPackages()
+    {
+        try
+        {
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            var model = new UploadedPackagesListViewModel();
+
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+                return View(model);
+            }
+
+            var di = new DirectoryInfo(uploadsFolder);
+            var files = di.GetFiles("*.qwk");
+
+            foreach (var file in files.OrderByDescending(f => f.CreationTime))
+            {
+                model.Packages.Add(new UploadedPackageViewModel
+                {
+                    FileName = file.Name,
+                    FilePath = file.FullName,
+                    FileSize = file.Length,
+                    UploadDate = file.CreationTime
+                });
+            }
+
+            return View(model);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error listing uploaded packages");
+            return View(new UploadedPackagesListViewModel());
+        }
+    }
+
+    public IActionResult OpenPackage(string fileName)
+    {
+        if (string.IsNullOrEmpty(fileName))
+        {
+            return RedirectToAction(nameof(Index));
+        }
+
+        try
+        {
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            var packagePath = Path.Combine(uploadsFolder, Path.GetFileName(fileName));
+
+            if (!System.IO.File.Exists(packagePath))
+            {
+                _logger.LogWarning($"Package not found: {packagePath}");
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Criar pasta temporária única
+            var tmpDir = Path.Combine(uploadsFolder, "temp_" + Guid.NewGuid() + "/");
+            Directory.CreateDirectory(tmpDir);
+
+            try
+            {
+                // Descompactar o pacote
+                Methods.OpenQWKPacket(packagePath, tmpDir);
+
+                // Obter informações do BBS
+                var bbsInfo = Methods.GetBBSInfo(tmpDir);
+                var forums = Methods.GetForuns(tmpDir);
+
+                var model = new OpenPackageViewModel
+                {
+                    PackageFileName = Path.GetFileName(packagePath),
+                    BBSInfo = bbsInfo,
+                    Forums = forums
+                };
+
+                // Armazenar o caminho temporário na sessão para usar depois
+                HttpContext.Session.SetString("CurrentTmpDir", tmpDir);
+                HttpContext.Session.SetString("CurrentPackagePath", packagePath);
+
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error opening package: {packagePath}");
+                // Limpar pasta temporária em caso de erro
+                if (Directory.Exists(tmpDir))
+                {
+                    Directory.Delete(tmpDir, true);
+                }
+                ModelState.AddModelError("", $"Error opening package: {ex.Message}");
+                return RedirectToAction(nameof(Index));
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error in OpenPackage");
+            return RedirectToAction(nameof(Index));
+        }
+    }
+
+    [HttpPost]
+    public IActionResult DeletePackage(string fileName)
+    {
+        if (string.IsNullOrEmpty(fileName))
+        {
+            return RedirectToAction(nameof(UploadedPackages));
+        }
+
+        try
+        {
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            var filePath = Path.Combine(uploadsFolder, Path.GetFileName(fileName));
+
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+                _logger.LogInformation($"Deleted package: {fileName}");
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"Error deleting package: {fileName}");
+        }
+
+        return RedirectToAction(nameof(UploadedPackages));
     }
 
     public IActionResult Package(string? bbsId)
@@ -73,7 +221,6 @@ public class QWKController : Controller
 
             var bbsInfo = _qwkService.GetBBSInfo();
             var forums = _qwkService.GetForums();
-
             var model = new PackageViewModel
             {
                 BBSInfo = bbsInfo,

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EbXYK8Oovw0=",
+  "dgSpecHash": "k6Lr0z6qPLo=",
   "success": true,
   "projectFilePath": "/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/SharpQWKReader.Web.csproj",
   "expectedPackageFiles": [
@@ -27,23 +27,9 @@
     "/home/tbytecreator/.nuget/packages/system.clientmodel/1.5.1/system.clientmodel.1.5.1.nupkg.sha512",
     "/home/tbytecreator/.nuget/packages/system.configuration.configurationmanager/9.0.4/system.configuration.configurationmanager.9.0.4.nupkg.sha512",
     "/home/tbytecreator/.nuget/packages/system.identitymodel.tokens.jwt/7.7.1/system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
-    "/home/tbytecreator/.nuget/packages/system.io.compression.zipfile/4.3.0/system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "/home/tbytecreator/.nuget/packages/system.memory.data/8.0.1/system.memory.data.8.0.1.nupkg.sha512",
     "/home/tbytecreator/.nuget/packages/system.security.cryptography.pkcs/9.0.4/system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "/home/tbytecreator/.nuget/packages/system.security.cryptography.protecteddata/9.0.4/system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference System.IO.Compression.ZipFile will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/SharpQWKReader.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/SharpQWKReader.Web.csproj",
-      "libraryId": "System.IO.Compression.ZipFile",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

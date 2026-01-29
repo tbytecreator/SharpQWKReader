@@ -34,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/OpenPackage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL09wZW5QYWNrYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/Package.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL1BhY2thZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/UploadedPackages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL1VwbG9hZGVkUGFja2FnZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/Shared/Error.cshtml]

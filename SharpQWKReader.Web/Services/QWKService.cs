@@ -1,5 +1,4 @@
 using QWK;
-
 namespace SharpQWKReader.Web.Services;
 
 public interface IQWKService
@@ -19,7 +18,7 @@ public class QWKService : IQWKService
     public QWKService(ILogger<QWKService> logger)
     {
         _logger = logger;
-        _tmpDir = Path.Combine(Path.GetTempPath(), "qwk_temp_" + Guid.NewGuid());
+        _tmpDir = Path.Combine("./uploads/", "qwk_temp_" + Guid.NewGuid()+"/");
     }
 
     public void OpenQWKPacket(string packetPath)
