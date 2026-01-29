@@ -1,0 +1,27 @@
+{
+    "version": "0.1.0",
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "omnisharp.enableRoslynAnalyzers": true,
+        "omnisharp.enableEditorConfigSupport": true,
+        "omnisharp.enableAnalyzerSupport": true,
+        "omnisharp.defaultLaunchSolution": "SharpQWKReader.sln",
+        "csharp.format.enable": true,
+        "csharp.inlayHints.enableInlayHints": true,
+        "[csharp]": {
+            "editor.defaultFormatter": "ms-dotnettools.csharp",
+            "editor.formatOnSave": true
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-dotnettools.csharp",
+            "ms-dotnettools.vscode-dotnet-runtime",
+            "ms-vscode.makefile-tools"
+        ]
+    }
+}

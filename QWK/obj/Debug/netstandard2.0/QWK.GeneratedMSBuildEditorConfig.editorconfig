@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = QWK
+build_property.ProjectDir = /home/tbytecreator/Dev/tremyen/SharpQWKReader/QWK/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

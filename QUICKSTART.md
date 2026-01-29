@@ -3,40 +3,46 @@
 ## 30 Segundos para Rodar a Aplicação
 
 ### Opção 1: Docker Compose (Mais Fácil)
+
 ```bash
 cd /home/tbytecreator/Dev/tremyen/SharpQWKReader
 docker-compose -f docker-compose.web.yml up --build
 ```
+
 Acesse: **http://localhost**
 
 ---
 
 ### Opção 2: Localmente (Requer .NET 8.0)
+
 ```bash
 cd SharpQWKReader.Web
 dotnet restore
 dotnet run
 ```
+
 Acesse: **http://localhost:5000**
 
 ---
 
 ### Opção 3: Script Automático
+
 ```bash
 chmod +x run-web.sh
 ./run-web.sh
 ```
+
 Acesse: **http://localhost**
 
 ---
 
 ## 📋 Requisitos
 
-| Opção | Requisitos |
-|---|---|
-| Docker | Docker Desktop |
-| Localmente | .NET 8.0 SDK |
-| Script | Docker + Bash |
+| Opção      | Requisitos      |
+|------------|-----------------|
+| Docker     | Docker Desktop  |
+| Localmente | .NET 8.0 SDK    |
+| Script     | Docker + Bash   |
 
 ---
 

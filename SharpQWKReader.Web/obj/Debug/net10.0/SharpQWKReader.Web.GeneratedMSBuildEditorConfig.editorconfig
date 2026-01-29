@@ -1,0 +1,51 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SharpQWKReader.Web
+build_property.RootNamespace = SharpQWKReader.Web
+build_property.ProjectDir = /home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/Forum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL0ZvcnVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/Message.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL01lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/QWK/Package.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUVdLL1BhY2thZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tbytecreator/Dev/tremyen/SharpQWKReader/SharpQWKReader.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

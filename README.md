@@ -4,7 +4,7 @@
 
 Um pacote QWK é um zip file simples com alguns arquivos com layout definido.
 
-## Referencia para o Layot de arquivos de um pacote QWK: 
+## Referencia para o Layot de arquivos de um pacote QWK
 
 http://fileformats.archiveteam.org/wiki/QWK
 
