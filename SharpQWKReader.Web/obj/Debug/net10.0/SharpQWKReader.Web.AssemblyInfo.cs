@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharpQWKReader.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c28da2315efb762e3137a984782f78a3bf474e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9fa3e3e477559968c109f9b3d1bd0e4a319fc45")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharpQWKReader.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharpQWKReader.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
