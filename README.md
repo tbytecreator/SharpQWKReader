@@ -15,15 +15,16 @@ Este projeto foi REFATORADO de Windows Forms para ASP.NET Core 8.0 WEB.
 ═══════════════════════════════════════════════════════════════════
 
 ✅ USE:
-  docker-compose -f docker-compose.web.yml up --build
+docker-compose -f docker-compose.web.yml up --build
 
 ═══════════════════════════════════════════════════════════════════
 
 Arquivos Novos (Web - use):
-  • Dockerfile.web                  (✅ Novo)
-  • docker-compose.web.yml          (✅ Novo)
-  • SharpQWKReader.Web/             (✅ Nova aplicação web)
-  • run-web.sh                      (✅ Script para iniciar)
+
+- Dockerfile.web                  (✅ Novo)
+- docker-compose.web.yml          (✅ Novo)
+- SharpQWKReader.Web/             (✅ Nova aplicação web)
+- run-web.sh                      (✅ Script para iniciar)
 
 ═══════════════════════════════════════════════════════════════════
 
@@ -45,22 +46,28 @@ Para mais informações, abra: DOCKER_SETUP.md
 ### Build e run
 
 docker-compose -f docker-compose.web.yml up --build
+
 Acesse: `http://localhost`
 
 ### Localmente (Requer .NET 10.0)
 
 cd SharpQWKReader.Web
+
 dotnet restore
+
 dotnet run
+
 Acesse: `http://localhost:5000` ou `https://localhost:5001`
 
 ### Com Script
 
 chmod +x run-web.sh
+
 ./run-web.sh
 
 ## 📁 Estrutura do Projeto
 
+'''
 SharpQWKReader/
 ├── QWK/                           # Biblioteca QWK (reutilizada)
 ├── SharpQWKReader.Web/            # ⭐ NOVO - Aplicação Web
@@ -80,6 +87,7 @@ SharpQWKReader/
 │   └── Dockerfile                 # Containerização
 ├── docker-compose.web.yml         # Compose Web
 └── WEB_REFACTORING.md            # Documentação
+'''
 
 ## 🎯 Funcionalidades
 
