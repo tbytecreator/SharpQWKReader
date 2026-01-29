@@ -67,7 +67,7 @@ chmod +x run-web.sh
 
 ## 📁 Estrutura do Projeto
 
-```
+```ansi
 SharpQWKReader/
 ├── QWK/                           # Biblioteca QWK (reutilizada)
 ├── SharpQWKReader.Web/            # ⭐ NOVO - Aplicação Web
@@ -104,6 +104,7 @@ SharpQWKReader/
 
 ## 🛠️ Stack Técnico
 
+```ansi
 Frontend:
 ├── HTML5 / Razor Views
 ├── Bootstrap 5
@@ -120,6 +121,7 @@ Deployment:
 ├── Docker
 ├── Docker Compose
 └── Multi-stage builds
+```
 
 ## Endpoints
 
@@ -135,17 +137,21 @@ Deployment:
 
 ### Variáveis de Ambiente
 
+```csharp
 ASPNETCORE_ENVIRONMENT=Production
 ASPNETCORE_URLS=http://+:80
+```
 
 ### Limites de Upload
 
 Editar em `Program.cs`:
 
+```csharp
 builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = long.MaxValue; // Aumentar se necessário
 });
+```
 
 ## 📦 Dependências
 
