@@ -201,7 +201,7 @@ builder.Services.AddHsts(options =>
 app.UseHttpsRedirection();
 ```
 
-## � Status do Projeto
+## Status do Projeto
 
 ### ✅ Concluído
 
