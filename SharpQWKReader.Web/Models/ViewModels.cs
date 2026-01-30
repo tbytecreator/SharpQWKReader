@@ -11,7 +11,7 @@ public class PackageViewModel
 public class ForumViewModel
 {
     public string? ForumId { get; set; }
-    public List<Message>? Messages { get; set; }
+    public List<MessagePointer>? MessagePointers { get; set; }
 }
 
 public class UploadedPackageViewModel

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using QWK;
+using SharpQWKReader.Web.Configuration;
 using SharpQWKReader.Web.Models;
 using SharpQWKReader.Web.Services;
 
@@ -10,12 +11,14 @@ public class QWKController : Controller
     private readonly IQWKService _qwkService;
     private readonly ILogger<QWKController> _logger;
     private readonly IWebHostEnvironment _env;
+    private readonly IQWKConfig _qwkConfig;
 
-    public QWKController(IQWKService qwkService, ILogger<QWKController> logger, IWebHostEnvironment env)
+    public QWKController(IQWKService qwkService, ILogger<QWKController> logger, IWebHostEnvironment env, IQWKConfig qwkConfig)
     {
         _qwkService = qwkService;
         _logger = logger;
         _env = env;
+        _qwkConfig = qwkConfig;
     }
 
     public IActionResult Index()
@@ -129,6 +132,7 @@ public class QWKController : Controller
         try
         {
             var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            var tempBaseFolder = Path.Combine(_env.WebRootPath, _qwkConfig.TempDirectory);
             var packagePath = Path.Combine(uploadsFolder, Path.GetFileName(fileName));
 
             if (!System.IO.File.Exists(packagePath))
@@ -138,16 +142,15 @@ public class QWKController : Controller
             }
 
             // Criar pasta temporária única
-            var tmpDir = Path.Combine(uploadsFolder, "temp_" + Guid.NewGuid() + "/");
-            Directory.CreateDirectory(tmpDir);
+            Directory.CreateDirectory(tempBaseFolder);
 
             try
             {
                 // Descompactar o pacote
-                Methods.OpenQWKPacket(packagePath, tmpDir);
+                Methods.OpenQWKPacket(packagePath, tempBaseFolder);
 
                 // Obter informações do BBS
-                var bbsInfo = Methods.GetBBSInfo(tmpDir);
+                var bbsInfo = Methods.GetBBSInfo(tempBaseFolder);
 
                 var model = new OpenPackageViewModel
                 {
@@ -156,7 +159,7 @@ public class QWKController : Controller
                 };
 
                 // Armazenar o caminho temporário na sessão para usar depois
-                HttpContext.Session.SetString("CurrentTmpDir", tmpDir);
+                HttpContext.Session.SetString("CurrentTmpDir", tempBaseFolder);
                 HttpContext.Session.SetString("CurrentPackagePath", packagePath);
 
                 return View(model);
@@ -165,9 +168,9 @@ public class QWKController : Controller
             {
                 _logger.LogError(ex, $"Error opening package: {packagePath}");
                 // Limpar pasta temporária em caso de erro
-                if (Directory.Exists(tmpDir))
+                if (Directory.Exists(tempBaseFolder))
                 {
-                    Directory.Delete(tmpDir, true);
+                    Directory.Delete(tempBaseFolder, true);
                 }
                 ModelState.AddModelError("", $"Error opening package: {ex.Message}");
                 return RedirectToAction(nameof(Index));
@@ -205,7 +208,6 @@ public class QWKController : Controller
 
         return RedirectToAction(nameof(UploadedPackages));
     }
-
     public IActionResult Package(string? bbsId)
     {
         try
@@ -236,12 +238,12 @@ public class QWKController : Controller
     {
         try
         {
-            var messages = _qwkService.GetForumMessages(forumId);
+            var messagePointers = _qwkService.GetForumMessagePointers(forumId);
             
             var model = new ForumViewModel
             {
                 ForumId = forumId,
-                Messages = messages
+                MessagePointers = messagePointers
             };
 
             return View(model);

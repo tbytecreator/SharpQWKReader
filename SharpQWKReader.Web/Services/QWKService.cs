@@ -1,4 +1,7 @@
 using QWK;
+using SharpQWKReader.Web.Configuration;
+using SharpQWKReader.Web.Models;
+
 namespace SharpQWKReader.Web.Services;
 
 public interface IQWKService
@@ -6,7 +9,7 @@ public interface IQWKService
     void OpenQWKPacket(string packetPath);
     BBSInfo GetBBSInfo();
     List<Forum> GetForums();
-    List<Message> GetForumMessages(string forumId);
+    List<MessagePointer> GetForumMessagePointers(string forumId);
     Message GetMessage(ulong messageNumber);
 }
 
@@ -14,11 +17,13 @@ public class QWKService : IQWKService
 {
     private readonly string _tmpDir;
     private readonly ILogger<QWKService> _logger;
+    private readonly IQWKConfig _qwkConfig;
 
-    public QWKService(ILogger<QWKService> logger)
+    public QWKService(ILogger<QWKService> logger, IQWKConfig qwkConfig, IWebHostEnvironment env)
     {
         _logger = logger;
-        _tmpDir = Path.Combine("uploads/", "qwk_temp_" + Guid.NewGuid()+"/");
+        _qwkConfig = qwkConfig;
+        _tmpDir = Path.Combine(env.WebRootPath, _qwkConfig.TempDirectory);
     }
 
     public void OpenQWKPacket(string packetPath)
@@ -50,9 +55,9 @@ public class QWKService : IQWKService
         return Methods.GetForuns(_tmpDir, bbsinfo, lines);
     }
 
-    public List<Message> GetForumMessages(string forumId)
+    public List<MessagePointer> GetForumMessagePointers(string forumId)
     {
-        return Methods.GetForumMessages(_tmpDir, forumId);
+        return Methods.GetForumMessagePointers(_tmpDir, forumId);
     }
 
     public Message GetMessage(ulong messageNumber)

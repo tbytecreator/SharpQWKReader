@@ -1,3 +1,4 @@
+using SharpQWKReader.Web.Configuration;
 using SharpQWKReader.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
+builder.Services.AddSingleton<IQWKConfig, QWKConfig>();
 builder.Services.AddScoped<IQWKService, QWKService>();
 
 var app = builder.Build();
