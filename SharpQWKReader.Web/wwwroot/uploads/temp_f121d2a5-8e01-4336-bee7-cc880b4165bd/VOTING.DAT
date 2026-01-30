@@ -1,0 +1,1421 @@
+[2580]
+[poll:<69559C3C.5533.dove-general@toolazy.synchro.net>]
+Utf8 = false
+MaxVotes = 1
+Results = 1
+PollAnswer0 = Yes
+PollAnswer1 = No
+Subject: Are you or did you drink New Year's Eve
+WhenWritten:  20251231165716-0500  412c
+Sender: Amessyroom
+SenderNetAddr: VERT/TL-QWK
+Conference: 4001
+
+[2600]
+[vote:<69559C5D.5534.dove-general@toolazy.synchro.net>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20251231165749-0500  412c
+Sender: Amessyroom
+SenderNetAddr: VERT/TL-QWK
+Conference: 4001
+
+[2680]
+[vote:<6955BCBF.77231.dove_dove-gen@digitaldistortionbbs.com>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20251231161559-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[3080]
+[vote:<6955DAF8.1239.dove-general@cwshack.ddns.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20251231212456-0500  fed4
+Sender: Khronos
+SenderNetAddr: VERT/CWSHACK
+Conference: 4001
+
+[3800]
+[vote:<6955E332.5309.dove-general@outwest.synchro.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20251231200002-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[3b00]
+[vote:<6955ECCA.38221.dove-general@endofthelinebbs.com>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20251231214058-0600  4168
+Sender: Mortar
+SenderNetAddr: VERT/EOTLBBS
+Conference: 4001
+
+[4380]
+[vote:<69567A59.5816.dove-general@primenet.synchro.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260101064457-0700  41a4
+Sender: NYTRO
+SenderNetAddr: VERT/PRIMENET
+Conference: 4001
+
+[4400]
+[vote:<6956870E.11224.dove-general@tacopronto.bbs.io>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260101073910-0700  41a4
+Sender: Bf2k+
+SenderNetAddr: VERT/TACOPRON
+Conference: 4001
+
+[5980]
+[vote:<6956967F.31941.dove-net2001@conchaos.synchro.net>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260101104503-0500  412c
+Sender: Codefenix
+SenderNetAddr: VERT/CONCHAOS
+Conference: 4001
+
+[7000]
+[vote:<6956A103.77244.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6955DF30.5308.dove-general@outwest.synchro.net>
+WhenWritten:  20260101082955-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[c680]
+[vote:<6956C1D4.77280.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956B14E.860.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260101104956-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[dd00]
+[vote:<695701E1.27285.dove-general@firesidebbs.com>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260101172313-0600  4168
+Sender: Lonewolf
+SenderNetAddr: VERT/BINARYDR
+Conference: 4001
+
+[12b80]
+[vote:<69580A83.77312.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956E06A.71450.dove-gen@capcity2.synchro.net>
+WhenWritten:  20260102101219-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[12c00]
+[vote:<69580AA2.77313.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956D74F.6379.dove-general@enigma-bbs.com>
+WhenWritten:  20260102101250-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[12f80]
+[vote:<69580C12.77315.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69577055.38277.dove-general@endofthelinebbs.com>
+WhenWritten:  20260102101858-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[13000]
+[vote:<69581085.77316.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69577876.38278.dove-general@endofthelinebbs.com>
+WhenWritten:  20260102103757-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[16b00]
+[vote:<69583349.77333.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69582804.906.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260102130617-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[17100]
+[vote:<69583C77.136240.dove-gen@vert.synchro.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260102134527-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4001
+
+[17180]
+[vote:<69583E59.136241.dove-gen@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <6955C033.77233.dove_dove-gen@digitaldistortionbbs.com>
+WhenWritten:  20260102135329-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4001
+
+[17200]
+[vote:<69583A50.5408.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69582804.905.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260102143616-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[17c00]
+[vote:<695842CE.77341.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69582C4A.5394.dove-general@outwest.synchro.net>
+WhenWritten:  20260102141230-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[17c80]
+[vote:<695842E0.77342.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69583372.38304.dove-general@endofthelinebbs.com>
+WhenWritten:  20260102141248-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[18c00]
+[vote:<69584155.5418.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69583602.38307.dove-general@endofthelinebbs.com>
+WhenWritten:  20260102150613-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[18f80]
+[vote:<69587C77.5426.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69584629.77349.dove_dove-gen@digitaldistortionbbs.com>
+WhenWritten:  20260102191831-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[1ef00]
+[vote:<69594FED.77378.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69587D3A.935.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260103092045-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[1f480]
+[vote:<695950E8.77380.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69587FF3.5427.dove-general@outwest.synchro.net>
+WhenWritten:  20260103092456-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[21380]
+[vote:<69595AEF.77391.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69594C4B.952.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260103100743-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[26b80]
+[vote:<6959CC78.4557.dove-general@bbs.canerduh.com>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260103191208-0700  41a4
+Sender: Greyb34rd
+SenderNetAddr: VERT/V01DCPHR
+Conference: 4001
+
+[2a100]
+[vote:<695AA492.77439.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6959B6D2.38362.dove-general@endofthelinebbs.com>
+WhenWritten:  20260104093410-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[2a480]
+[vote:<695AA536.77441.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6959CB8B.40168.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260104093654-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[2ae80]
+[vote:<695AA739.77445.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6958D12A.1010.dovenet_2001@tboltbbs.synchro.net>
+WhenWritten:  20260104094529-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[2c800]
+[vote:<695AC4E0.77453.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695AA643.1008.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260104115200-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[2cb80]
+[vote:<695A8CF1.71734.dove-gen@CAPTEST>]
+UpVote = true
+In-Reply-To: <6959C07B.16656.dove-gen@bbses.info>
+WhenWritten:  20260104105321-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPTEST
+Conference: 4001
+
+[2cc00]
+[vote:<695ADB21.77458.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695ABE80.38410.dove-general@endofthelinebbs.com>
+WhenWritten:  20260104132657-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[2d300]
+[vote:<695ADCC2.5531.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <695AA643.1009.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260104143354-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[30900]
+[vote:<695B2184.6356.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <6959AAAE.16650.dove-gen@bbses.info>
+WhenWritten:  20260104212716-0500  412c
+Sender: Rixter
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[30c00]
+[vote:<695B2C85.938.dove-general@hamshack.synchro.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260104211413-0600  fe98
+Sender: KJ5EKH
+SenderNetAddr: VERT/HAMSHACK
+Conference: 4001
+
+[30c80]
+[poll:<695B2D0F.939.dove-general@hamshack.synchro.net>]
+Utf8 = false
+MaxVotes = 1
+Results = 1
+PollAnswer0 = yes
+PollAnswer1 = no
+Subject: Have you taken down your Christmas decorations yet?
+WhenWritten:  20260104211631-0600  fe98
+Sender: KJ5EKH
+SenderNetAddr: VERT/HAMSHACK
+Conference: 4001
+
+[31380]
+[vote:<695B3909.27481.dove-general@firesidebbs.com>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260104220737-0600  4168
+Sender: Lonewolf
+SenderNetAddr: VERT/BINARYDR
+Conference: 4001
+
+[33780]
+[vote:<695B453F.5564.dove-general@outwest.synchro.net>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260104215943-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[33a80]
+[vote:<695B51FF.598.dove-general@bbs.mycrowd.ca>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260104215407-0800  fe20
+Sender: The Wanderer
+SenderNetAddr: VERT/YAKKING
+Conference: 4001
+
+[33b00]
+[vote:<695B6E77.1678.dove-general@citlmbbs.synchro.net>]
+Votes = 0x2
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260105075535Z      0000
+Sender: Tanausu M.
+SenderNetAddr: VERT/CITLMBBS
+Conference: 4001
+
+[34200]
+[vote:<695BB849.32202.dove-net2001@conchaos.synchro.net>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260105081033-0500  412c
+Sender: Codefenix
+SenderNetAddr: VERT/CONCHAOS
+Conference: 4001
+
+[34280]
+[vote:<695BE0A3.5581.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <695B4D34.38439.dove-general@endofthelinebbs.com>
+WhenWritten:  20260105090243-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[34300]
+[vote:<695BE8CC.77507.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695B127F.1035.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260105083732-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[34380]
+[vote:<695BE8EB.77508.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695B12FB.1036.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260105083803-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[34700]
+[vote:<695BE965.77510.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695B34E8.3799.dove-gen@pharcyde.org>
+WhenWritten:  20260105084005-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[37000]
+[vote:<695B92AE.817.dove-general@bbs.lizardmaster.com>]
+Votes = 0x2
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260105053006-0500  fed4
+Sender: Ito
+SenderNetAddr: VERT/NITEEYES
+Conference: 4001
+
+[37080]
+[vote:<695C67B8.77526.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695C266D.71658.dove-gen@capcity2.synchro.net>
+WhenWritten:  20260105173904-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[38980]
+[vote:<695D45A0.11518.dove-general@tacopronto.bbs.io>]
+Votes = 0x2
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260106102552-0700  41a4
+Sender: phigan
+SenderNetAddr: VERT/TACOPRON
+Conference: 4001
+
+[3d080]
+[vote:<695E9DFE.5632.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <695D9A1D.1150.dovenet_2001@tboltbbs.synchro.net>
+WhenWritten:  20260107105510-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[3ef80]
+[vote:<695FBEA3.40332.dove-general@palantirbbs.ddns.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260108082643-0600  4168
+Sender: Arelor
+SenderNetAddr: VERT/PALANTIR
+Conference: 4001
+
+[42200]
+[vote:<695FF2CA.77588.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695FD27A.1133.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260108100914-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[48a00]
+[vote:<6961CCFE.5699.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69611F11.1149.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260109205230-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[48a80]
+[vote:<6961D50C.5703.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <6961BE20.40384.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260109212652-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[4c400]
+[vote:<6962FF25.77643.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6962A1ED.1167.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260110173845-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[4e100]
+[vote:<696409FD.11638.dove-general@tacopronto.bbs.io>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260111133717-0700  41a4
+Sender: NewHello
+SenderNetAddr: VERT/TACOPRON
+Conference: 4001
+
+[4e300]
+[vote:<69640A17.11639.dove-general@tacopronto.bbs.io>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260111133743-0700  41a4
+Sender: NewHello
+SenderNetAddr: VERT/TACOPRON
+Conference: 4001
+
+[4e380]
+[vote:<69640995.40415.dove-general@palantirbbs.ddns.net>]
+UpVote = true
+In-Reply-To: <6963BBCE.3945.dove-gen@pharcyde.org>
+WhenWritten:  20260111143533-0600  4168
+Sender: Gamgee
+SenderNetAddr: VERT/PALANTIR
+Conference: 4001
+
+[54f80]
+[vote:<6966CDF2.77696.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6966A88A.38594.dove-general@endofthelinebbs.com>
+WhenWritten:  20260113145754-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[57600]
+[vote:<6966DDD9.1936.dove-general@bbs.digitalrainbow.info>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260114110545+1100  9258
+Sender: Frankiyoung
+SenderNetAddr: VERT/DR
+Conference: 4001
+
+[58d80]
+[vote:<69680291.77717.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6967AEB6.1218.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260114125441-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[5c380]
+[vote:<69694402.6588.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <6968EB63.6584.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260115144610-0500  412c
+Sender: Wes Thomas
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[5de80]
+[vote:<69697AB7.6590.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <69695D75.64884.dove-general@dmine.net>
+WhenWritten:  20260115183935-0500  412c
+Sender: Gary Gordon
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[5df00]
+[vote:<69697AC8.6591.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <69691FEB.6587.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260115183952-0500  412c
+Sender: Gary Gordon
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[5df80]
+[vote:<69697B12.6592.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <6968EB63.6584.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260115184106-0500  412c
+Sender: Gary Gordon
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[61500]
+[vote:<696A716D.77758.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696A644D.1249.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260116091213-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[61a00]
+[vote:<696A8AC2.5835.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <696A644D.1246.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260116120018-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[63400]
+[vote:<696ADF98.136670.dove-gen@vert.synchro.net>]
+Votes = 0x2
+In-Reply-To: <691FB9CC.268.dove-general@a-net-online.lol>
+WhenWritten:  20260116170216-0800  41e0
+Sender: Morningstarr
+SenderNetAddr: VERT
+Conference: 4001
+
+[63480]
+[vote:<696ADFAD.136671.dove-gen@vert.synchro.net>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260116170237-0800  41e0
+Sender: Morningstarr
+SenderNetAddr: VERT
+Conference: 4001
+
+[65380]
+[vote:<696BA84E.5855.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <696B0BC3.40533.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260117081838-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[66800]
+[vote:<696BD299.6628.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <696A541C.6601.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260117131905-0500  412c
+Sender: Eddie Wilson
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[66880]
+[vote:<696BD2AA.6629.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <6968EB63.6584.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260117131922-0500  412c
+Sender: Eddie Wilson
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[66900]
+[vote:<696BDFC5.77790.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696BCDA7.1273.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260117111517-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[67a80]
+[vote:<696BFFFA.5869.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <696BF937.5868.dove-general@outwest.synchro.net>
+WhenWritten:  20260117143242-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[67b00]
+[vote:<696C0120.5870.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <696B0BC3.40533.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260117143736-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[69600]
+[vote:<696CFE7B.1283.dove-general@a-net-online.lol>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260118103835-0500  412c
+Sender: cozmo
+SenderNetAddr: VERT/ANETO
+Conference: 4001
+
+[69680]
+[vote:<696CFE96.1284.dove-general@a-net-online.lol>]
+Votes = 0x1
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260118103902-0500  412c
+Sender: cozmo
+SenderNetAddr: VERT/ANETO
+Conference: 4001
+
+[69980]
+[vote:<696D45A6.77811.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696CCBBD.4081.dove-gen@pharcyde.org>
+WhenWritten:  20260118124214-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[6b900]
+[vote:<696E3B1C.71892.dove-gen@capcity2.synchro.net>]
+UpVote = true
+In-Reply-To: <696D5A0D.38690.dove-general@endofthelinebbs.com>
+WhenWritten:  20260119090932-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPCITY2
+Conference: 4001
+
+[6f500]
+[vote:<6970344C.1310.dove-general@a-net-online.lol>]
+Votes = 0x2
+In-Reply-To: <695B2D0F.939.dove-general@hamshack.synchro.net>
+WhenWritten:  20260120210500-0500  412c
+Sender: Metal
+SenderNetAddr: VERT/ANETO
+Conference: 4001
+
+[6f580]
+[vote:<69703453.1311.dove-general@a-net-online.lol>]
+Votes = 0x2
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260120210507-0500  412c
+Sender: Metal
+SenderNetAddr: VERT/ANETO
+Conference: 4001
+
+[71380]
+[vote:<69712403.77845.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6970E2EA.71907.dove-gen@capcity2.synchro.net>
+WhenWritten:  20260121110747-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[72b80]
+[vote:<69718514.32551.dove-net2001@conchaos.synchro.net>]
+UpVote = true
+In-Reply-To: <69714BAF.11833.dove-general@tacopronto.bbs.io>
+WhenWritten:  20260121210156-0500  412c
+Sender: Codefenix
+SenderNetAddr: VERT/CONCHAOS
+Conference: 4001
+
+[74d00]
+[vote:<697252BC.77859.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6971BA4D.5929.dove-general@outwest.synchro.net>
+WhenWritten:  20260122083924-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[79c80]
+[vote:<6972E172.976.dove-general@bbs.mycrowd.ca>]
+UpVote = true
+In-Reply-To: <6972C9D6.136776.dove-gen@vert.synchro.net>
+WhenWritten:  20260122184818-0800  fe20
+Sender: The Wanderer
+SenderNetAddr: VERT/YAKKING
+Conference: 4001
+
+[7e480]
+[vote:<69738A2E.5966.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <6973849F.40647.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260123074814-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[7e500]
+[vote:<69739B61.5967.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <697387E4.5962.dove-general@outwest.synchro.net>
+WhenWritten:  20260123090137-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[7e580]
+[vote:<69739B82.5968.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69737EF3.4155.dove-gen@pharcyde.org>
+WhenWritten:  20260123090210-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[7e600]
+[vote:<69739B97.5969.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <6973849F.40647.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260123090231-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[7e680]
+[vote:<6973A5C9.77896.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69730A9C.5955.dove-general@outwest.synchro.net>
+WhenWritten:  20260123084601-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[82a80]
+[vote:<6974578E.77922.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69743DFC.136816.dove-gen@vert.synchro.net>
+WhenWritten:  20260123212430-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[8d200]
+[vote:<6974E3E7.71969.dove-gen@capcity2.synchro.net>]
+UpVote = true
+In-Reply-To: <697392A0.40650.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260124102319-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPCITY2
+Conference: 4001
+
+[90a80]
+[vote:<6975245C.40748.dove-general@palantirbbs.ddns.net>]
+UpVote = true
+In-Reply-To: <69751F7E.136889.dove-gen@vert.synchro.net>
+WhenWritten:  20260124135820-0600  4168
+Sender: Arelor
+SenderNetAddr: VERT/PALANTIR
+Conference: 4001
+
+[94c80]
+[vote:<6975775E.78010.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69751081.11954.dove-general@tacopronto.bbs.io>
+WhenWritten:  20260124175230-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[95400]
+[vote:<697577B2.40769.dove-general@palantirbbs.ddns.net>]
+UpVote = true
+In-Reply-To: <697502A4.11940.dove-general@tacopronto.bbs.io>
+WhenWritten:  20260124195354-0600  4168
+Sender: Gamgee
+SenderNetAddr: VERT/PALANTIR
+Conference: 4001
+
+[95480]
+[vote:<697577B9.40770.dove-general@palantirbbs.ddns.net>]
+UpVote = true
+In-Reply-To: <69750301.11941.dove-general@tacopronto.bbs.io>
+WhenWritten:  20260124195401-0600  4168
+Sender: Gamgee
+SenderNetAddr: VERT/PALANTIR
+Conference: 4001
+
+[a2280]
+[vote:<6976F014.42200.dove-general@dungeon.barnabasmusic.com>]
+UpVote = true
+In-Reply-To: <697459DC.136824.dove-gen@vert.synchro.net>
+WhenWritten:  20260126153948+1100  9258
+Sender: Geo
+SenderNetAddr: VERT/DUNGEON
+Conference: 4001
+
+[a8600]
+[vote:<6977CC9C.6155.dove-general@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <69778C3F.1478.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260126132044-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4001
+
+[a9480]
+[vote:<69780A0B.78092.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6977CC65.6154.dove-general@outwest.synchro.net>
+WhenWritten:  20260126164251-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[aa800]
+[vote:<69782C78.137000.dove-gen@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <695A0567.5748.dove-general@toolazy.synchro.net>
+WhenWritten:  20260126190944-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4001
+
+[aa880]
+[vote:<6977F2E6.2678.dove-general@asanocomp.ddns.net>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260126150406-0800  fe20
+Sender: Samurai
+SenderNetAddr: VERT/ASANO
+Conference: 4001
+
+[b3c80]
+[vote:<697AE7CD.10210.dove-general@bbs.decafbad.com>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260129045333Z      0000
+Sender: Airdude
+SenderNetAddr: VERT/DECAFBAD
+Conference: 4001
+
+[b3d00]
+[vote:<697B45FC.6855.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <69594408.6256.dove-general@ricksbbs.synchro.net>
+WhenWritten:  20260129063524-0500  412c
+Sender: Rich Snively
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[b3d80]
+[vote:<697B4651.6856.dove-general@ricksbbs.synchro.net>]
+UpVote = true
+In-Reply-To: <6959AAAE.16650.dove-gen@bbses.info>
+WhenWritten:  20260129063649-0500  412c
+Sender: Rich Snively
+SenderNetAddr: VERT/RICKSBBS
+Conference: 4001
+
+[b5b00]
+[vote:<697BB1A7.78155.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <697ACBA0.40895.dove-general@palantirbbs.ddns.net>
+WhenWritten:  20260129111447-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[b5b80]
+[vote:<697BB1B8.78156.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <697BA893.1533.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260129111504-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[b5c00]
+[vote:<697BB1D1.78157.dove_dove-gen@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <697BA893.1535.dove.dove-gen@realitycheckbbs.org>
+WhenWritten:  20260129111529-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4001
+
+[b6000]
+[vote:<697BAD8D.962.dove-general@frontierbbs.co.uk>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260129185717Z      0000
+Sender: Waveyuk
+SenderNetAddr: VERT/FRONTIER
+Conference: 4001
+
+[b7a00]
+[vote:<697BEC97.10225.dove-general@bbs.decafbad.com>]
+Votes = 0x1
+In-Reply-To: <69559C3C.5533.dove-general@toolazy.synchro.net>
+WhenWritten:  20260129232615Z      0000
+Sender: Todor
+SenderNetAddr: VERT/DECAFBAD
+Conference: 4001
+
+[b9800]
+[vote:<69568010.2021.dove-ads@primenet.synchro.net>]
+UpVote = true
+In-Reply-To: <69556944.18876.dove-ads@vert.synchro.net>
+WhenWritten:  20260101070920-0700  41a4
+Sender: NYTRO
+SenderNetAddr: VERT/PRIMENET
+Conference: 4002
+
+[b9880]
+[vote:<6956968F.2839.dove-net2002@conchaos.synchro.net>]
+UpVote = true
+In-Reply-To: <69556944.18876.dove-ads@vert.synchro.net>
+WhenWritten:  20260101104519-0500  412c
+Sender: Codefenix
+SenderNetAddr: VERT/CONCHAOS
+Conference: 4002
+
+[c2980]
+[vote:<695D7058.2856.dove-net2002@conchaos.synchro.net>]
+UpVote = true
+In-Reply-To: <695D0070.18897.dove-ads@vert.synchro.net>
+WhenWritten:  20260106152808-0500  412c
+Sender: Codefenix
+SenderNetAddr: VERT/CONCHAOS
+Conference: 4002
+
+[c3480]
+[vote:<6960543C.18905.dove-ads@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <69603C79.14504.dove-ads@x-bit.org>
+WhenWritten:  20260108170500-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4002
+
+[d4780]
+[vote:<6971BBE9.1238.dove-ads@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <6970FD50.18941.dove-ads@vert.synchro.net>
+WhenWritten:  20260121225553-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4002
+
+[dac00]
+[vote:<6976F020.1254.dove-ads@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <6975B210.1246.dove-ads@outwest.synchro.net>
+WhenWritten:  20260125214000-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4002
+
+[dce80]
+[vote:<69600CCE.31682.dove_dove-deb@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695FEC2E.10617.dove-debate@palantirbbs.ddns.net>
+WhenWritten:  20260108120014-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4004
+
+[e4b00]
+[vote:<6976F0E9.12589.dove-debate@dungeon.barnabasmusic.com>]
+UpVote = true
+In-Reply-To: <691DC347.63159.dove-deb@vert.synchro.net>
+WhenWritten:  20260126154321+1100  9258
+Sender: Geo
+SenderNetAddr: VERT/DUNGEON
+Conference: 4004
+
+[e4f80]
+[vote:<6955EB32.1091.dove-hwswhelp@outwest.synchro.net>]
+Votes = 0x1
+In-Reply-To: <65077630.17994.dove-hlp@vert.synchro.net>
+WhenWritten:  20251231203410-0700  41a4
+Sender: Denn
+SenderNetAddr: VERT/OUTWEST
+Conference: 4005
+
+[e6080]
+[vote:<6956A262.8217.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695619C9.3147.dove-hwswhelp@endofthelinebbs.com>
+WhenWritten:  20260101083546-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[e7c80]
+[vote:<6956C223.8226.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956B808.1405.dove-hwswhelp@tacopronto.bbs.io>
+WhenWritten:  20260101105115-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[e7d00]
+[vote:<6956C251.8227.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956B14E.347.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260101105201-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[e8500]
+[vote:<6956FF16.8230.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6956F850.18927.dove-hlp@vert.synchro.net>
+WhenWritten:  20260101151118-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[e9600]
+[vote:<695833F0.8236.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69582804.356.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260102130904-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[e9680]
+[vote:<69583DB1.9343.dove-hlp@bbs.retroarchive.org>]
+Votes = 0x4
+In-Reply-To: <65077630.17994.dove-hlp@vert.synchro.net>
+WhenWritten:  20260102135041-0800  41e0
+Sender: Guest
+SenderNetAddr: VERT/RETROARC
+Conference: 4005
+
+[eba80]
+[vote:<695C3873.8247.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695C24D3.1807.dove-hwswhelp@firesidebbs.com>
+WhenWritten:  20260105141723-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[eda00]
+[vote:<695D5810.8255.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695C8549.18948.dove-hlp@vert.synchro.net>
+WhenWritten:  20260106104432-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[eda80]
+[vote:<695D582E.8256.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695D2FA3.18950.dove-hlp@vert.synchro.net>
+WhenWritten:  20260106104502-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[edb00]
+[vote:<695D583C.8257.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695D2FA6.18951.dove-hlp@vert.synchro.net>
+WhenWritten:  20260106104516-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f2500]
+[vote:<69656939.8277.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69651F4B.3205.dove-hwswhelp@endofthelinebbs.com>
+WhenWritten:  20260112133553-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f5780]
+[vote:<6968EE5E.6669.dove-hlp@capcity2.synchro.net>]
+UpVote = true
+In-Reply-To: <6967AEB6.403.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260115084046-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPCITY2
+Conference: 4005
+
+[f5800]
+[vote:<6968EE6D.6670.dove-hlp@capcity2.synchro.net>]
+UpVote = true
+In-Reply-To: <696880F3.1168.dove-hwswhelp@outwest.synchro.net>
+WhenWritten:  20260115084101-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPCITY2
+Conference: 4005
+
+[f5880]
+[vote:<69694245.8293.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696912B0.407.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260115113845-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f8200]
+[vote:<696A6ED1.8305.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6969B29D.1177.dove-hwswhelp@outwest.synchro.net>
+WhenWritten:  20260116090105-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f8280]
+[vote:<696A6ED7.8306.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6969F2A0.3226.dove-hwswhelp@endofthelinebbs.com>
+WhenWritten:  20260116090111-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f8300]
+[vote:<696A6EEB.8307.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696A46B9.18998.dove-hlp@vert.synchro.net>
+WhenWritten:  20260116090131-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f8380]
+[vote:<696A6F06.8308.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696A644D.421.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260116090158-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[f8d80]
+[vote:<696BDFFC.8312.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696B919F.6691.dove-hlp@capcity2.synchro.net>
+WhenWritten:  20260117111612-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[ff180]
+[vote:<6972D907.8339.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <6972C38B.19036.dove-hlp@vert.synchro.net>
+WhenWritten:  20260122181223-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[100000]
+[vote:<697565DE.8346.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69752316.19043.dove-hlp@vert.synchro.net>
+WhenWritten:  20260124163750-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[101580]
+[vote:<6976F108.1237.dove-hwswhelp@outwest.synchro.net>]
+UpVote = true
+In-Reply-To: <697577DD.3267.dove-hwswhelp@endofthelinebbs.com>
+WhenWritten:  20260125214352-0700  41a4
+Sender: Hudson Jasper
+SenderNetAddr: VERT/OUTWEST
+Conference: 4005
+
+[101800]
+[vote:<69780A89.8357.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <697663B0.461.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260126164457-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[101880]
+[vote:<69780A9C.8358.dove_dove-hlp@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <69764D90.265.dove-hwswhelp@datgsguy.com>
+WhenWritten:  20260126164516-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4005
+
+[101900]
+[vote:<697A723E.19058.dove-hlp@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <697663B0.461.dove.hardware@realitycheckbbs.org>
+WhenWritten:  20260128123158-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4005
+
+[117f80]
+[vote:<69583DD7.6305.dove-int@bbs.retroarchive.org>]
+Votes = 0x1
+In-Reply-To: <6421DF9B.8743.dove-int@vert.synchro.net>
+WhenWritten:  20260102135119-0800  41e0
+Sender: Guest
+SenderNetAddr: VERT/RETROARC
+Conference: 4009
+
+[11d980]
+[vote:<695B8CBE.9583.dove-int@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <695B1D35.9579.dove-int@vert.synchro.net>
+WhenWritten:  20260105020446-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4009
+
+[11df00]
+[vote:<695C1D30.6672.dove_dove-int@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <695C067F.1105.dove-internet@tacopronto.bbs.io>
+WhenWritten:  20260105122104-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4009
+
+[11df80]
+[vote:<695C46C5.9587.dove-int@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <695C067F.1105.dove-internet@tacopronto.bbs.io>
+WhenWritten:  20260105151829-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4009
+
+[11fc80]
+[vote:<695FC553.6253.dove-int@CAPTEST>]
+UpVote = true
+In-Reply-To: <695F0F76.2079.dove-int@bbses.info>
+WhenWritten:  20260108095515-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPTEST
+Conference: 4009
+
+[121500]
+[vote:<69625CF3.6263.dove-int@CAPTEST>]
+UpVote = true
+In-Reply-To: <69618123.2087.dove-int@bbses.info>
+WhenWritten:  20260110090643-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPTEST
+Conference: 4009
+
+[121e00]
+[vote:<6963BA6D.6267.dove-int@CAPTEST>]
+UpVote = true
+In-Reply-To: <6962911F.69.dove-internet@bbs.mycrowd.ca>
+WhenWritten:  20260111095749-0500  412c
+Sender: Dumas Walker
+SenderNetAddr: VERT/CAPTEST
+Conference: 4009
+
+[129a80]
+[vote:<696ADFF9.9641.dove-int@vert.synchro.net>]
+Votes = 0x1
+In-Reply-To: <6421DF9B.8743.dove-int@vert.synchro.net>
+WhenWritten:  20260116170353-0800  41e0
+Sender: Morningstarr
+SenderNetAddr: VERT
+Conference: 4009
+
+[171e80]
+[vote:<6956FAF3.55620.sync@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <6956DF9D.55617.sync@vert.synchro.net>
+WhenWritten:  20260101145339-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4014
+
+[17d980]
+[vote:<696BD720.89794.dove_sync@digitaldistortionbbs.com>]
+UpVote = true
+In-Reply-To: <696BA539.55692.sync@vert.synchro.net>
+WhenWritten:  20260117103824-0800  41e0
+Sender: Nightfox
+SenderNetAddr: VERT/DIGDIST
+Conference: 4014
+
+[184600]
+[vote:<69702D48.55719.sync@vert.synchro.net>]
+UpVote = true
+In-Reply-To: <69701F11.90048.dove-syncdisc@dmine.net>
+WhenWritten:  20260120173504-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4014
+
+[18b800]
+[vote:<696AE027.4305.sync-js@vert.synchro.net>]
+Votes = 0x4
+In-Reply-To: <5876E5F7.2252.dove_sync_js@digitaldistortionbbs.com>
+WhenWritten:  20260116170439-0800  41e0
+Sender: Morningstarr
+SenderNetAddr: VERT
+Conference: 4016
+
+[1fb600]
+[vote:<697A0B4A.54270.syncprog@vert.synchro.net>]
+DownVote = true
+In-Reply-To: <CAP-k3Fu1rUN+ayLSF+g302S6EXVFsM=CaPrEmwQKcLCVYs2scw@mail.gmail.com>
+WhenWritten:  20260128051242-0800  41e0
+Sender: Digital Man
+SenderNetAddr: VERT
+Conference: 4017
+

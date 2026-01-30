@@ -31,5 +31,4 @@ public class OpenPackageViewModel
 {
     public string PackageFileName { get; set; } = string.Empty;
     public BBSInfo? BBSInfo { get; set; }
-    public List<Forum>? Forums { get; set; }
 }

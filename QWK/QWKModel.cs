@@ -77,20 +77,20 @@ namespace QWK
             CONTROL.DAT (Ascii File)
             -----------------------------------------------------------------------------------------
             Line #
-            1   My BBS                   BBS name
-            2   New York, NY             BBS city and state
-            3   212-555-1212             BBS phone number
-            4   John Doe, Sysop          BBS Sysop name
-            5   20052,MYBBS              Mail door registration #, BBSID
-            6   01-01-1991,23:59:59      Mail packet creation time
-            7   JANE DOE                 User name (upper case)
-            8                            Name of menu for Qmail, blank if none
-            9   0                        ? Seem to be always zero
-            10   999                      Total number of messages in packet
-            11   121                      Total number of conference minus 1
-            12   0                        1st conf. number
-            13   Main Board               1st conf. name (13 characters or less)
-            14   1                        2nd conf. number
+            0   My BBS                   BBS name
+            1   New York, NY             BBS city and state
+            2   212-555-1212             BBS phone number
+            3   John Doe, Sysop          BBS Sysop name
+            4   20052,MYBBS              Mail door registration #, BBSID
+            5   01-01-1991,23:59:59      Mail packet creation time
+            6   JANE DOE                 User name (upper case)
+            7                            Name of menu for Qmail, blank if none
+            8   0                        ? Seem to be always zero
+            9   999                      Total number of messages in packet
+            10   121                      Total number of conference minus 1
+            11   0                        1st conf. number
+            12   Main Board               1st conf. name (13 characters or less)
+            13   1                        2nd conf. number
             15   General                  2nd conf. name
             ..   3                        etc. onward until it hits max. conf.
             ..   123                      Last conf. number
@@ -157,7 +157,7 @@ namespace QWK
             bbsInfo.MailDoorReg = lines[4];
             bbsInfo.MailPacketCreationTime = lines[5];
             bbsInfo.UserName = lines[6];
-            bbsInfo.MessagesInPacket = Convert.ToInt32(lines[9]);
+            bbsInfo.MessagesInPacket = Convert.ToInt32(lines[10]);
             return bbsInfo;
         }
 
@@ -165,7 +165,7 @@ namespace QWK
         {
             var foruns = new List<Forum>();
             var lines = OpenControlDat(tmpdir);
-            int contaAreas = Convert.ToInt32(lines[10]);
+            int contaAreas = Convert.ToInt32(lines[11]);
 
             for (var i = 11; i < contaAreas; i++)
             {

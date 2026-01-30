@@ -148,13 +148,11 @@ public class QWKController : Controller
 
                 // Obter informações do BBS
                 var bbsInfo = Methods.GetBBSInfo(tmpDir);
-                var forums = Methods.GetForuns(tmpDir);
 
                 var model = new OpenPackageViewModel
                 {
                     PackageFileName = Path.GetFileName(packagePath),
                     BBSInfo = bbsInfo,
-                    Forums = forums
                 };
 
                 // Armazenar o caminho temporário na sessão para usar depois
@@ -182,7 +180,6 @@ public class QWKController : Controller
         }
     }
 
-    [HttpPost]
     public IActionResult DeletePackage(string fileName)
     {
         if (string.IsNullOrEmpty(fileName))
@@ -220,11 +217,9 @@ public class QWKController : Controller
             }
 
             var bbsInfo = _qwkService.GetBBSInfo();
-            var forums = _qwkService.GetForums();
             var model = new PackageViewModel
             {
-                BBSInfo = bbsInfo,
-                Forums = forums
+                BBSInfo = bbsInfo
             };
 
             return View(model);

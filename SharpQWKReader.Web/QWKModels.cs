@@ -6,6 +6,32 @@ using System.Text;
 
 namespace QWK
 {
+    public class BBSInfo
+    {
+        public string? BbsName { get; set; }
+        public string? BbsPhone { get; set; }
+        public string? BbsLocation { get; set; }
+        public string? MailDoorReg { get; set; }
+        public string? MailPacketCreationTime { get; set; }
+        public string? SysopName { get; set; }
+        public string? UserName { get; set; }
+        public string? BbsId { get; set; }
+        public Int32 MessagesInPacket { get; set; }
+        public Int32 NumberOfForums { get; set; }
+        public List<Forum>? Forums { get; set; }
+    }
+
+     public class Forum
+    {
+        public string? ID { get; set; }
+        public string? Name { get; set; }
+        public int NumberOfMessages { get; set; }
+    }
+    public class MessagePointer
+    {
+        public ulong messageBytesLocation { get; set; }
+    }
+
     public class Message
     {
         public string? StatusFlag { get; set; }
@@ -26,31 +52,6 @@ namespace QWK
         public ulong Index { get; set; }
     }
 
-    public class BBSInfo
-    {
-        public string? BbsName { get; set; }
-        public string? BbsPhone { get; set; }
-        public string? BbsLocation { get; set; }
-        public string? MailDoorReg { get; set; }
-        public string? MailPacketCreationTime { get; set; }
-        public string? SysopName { get; set; }
-        public string? UserName { get; set; }
-        public string? BbsId { get; set; }
-        public Int32 MessagesInPacket { get; set; }
-    }
-
-    public class Forum
-    {
-        public string? ID { get; set; }
-        public string? Name { get; set; }
-        public int NumberOfMessages { get; set; }
-    }
-
-    public class MessagePointer
-    {
-        public ulong messageBytesLocation { get; set; }
-    }
-
     public class Methods
     {
         public static void OpenQWKPacket(string packet, string tmpdir)
@@ -68,41 +69,46 @@ namespace QWK
             Z.ZipFile.ExtractToDirectory(packet, tmpdir);
         }
 
-        private static string[] OpenControlDat(string tmpdir)
+        public static string[] OpenControlDat(string tmpdir)
         {
             return File.ReadAllLines(tmpdir + "CONTROL.DAT", Encoding.ASCII);
         }
 
+        public static byte[] OpenNDXFile(string tmpdir, string forumId)
+        {
+            var fileName = tmpdir + forumId + ".NDX";
+            if (!File.Exists(fileName)) return Array.Empty<byte>();
+            return File.ReadAllBytes(fileName);
+        }
+
         public static BBSInfo GetBBSInfo(string tmpdir)
         {
-            var lines = OpenControlDat(tmpdir);
-
             var bbsInfo = new BBSInfo();
+            var lines = OpenControlDat(tmpdir);
+            var line4 = lines[4].Split(',');
+
             bbsInfo.BbsName = lines[0].Trim();
             bbsInfo.BbsLocation = lines[1].Trim();
             bbsInfo.BbsPhone = lines[2].Trim();
             bbsInfo.SysopName = lines[3].Trim();
-
-            var line4 = lines[4].Split(',');
             bbsInfo.MailDoorReg = line4[0].Trim();
             bbsInfo.BbsId = line4[1].Trim();
-
             bbsInfo.MailPacketCreationTime = lines[5].Trim();
             bbsInfo.UserName = lines[6].Trim();
             bbsInfo.MessagesInPacket = Convert.ToInt32(lines[9].Trim());
+            bbsInfo.NumberOfForums = Convert.ToInt32(lines[10].Trim());
+            bbsInfo.Forums = GetForuns(tmpdir,bbsInfo,lines);
 
             return bbsInfo;
         }
 
-        public static List<Forum> GetForuns(string tmpdir)
+        public static List<Forum> GetForuns(string tmpdir,BBSInfo bbsInfo,string[] lines)
         {
-            var lines = OpenControlDat(tmpdir);
             var foruns = new List<Forum>();
+            var numberOfConferences = bbsInfo.NumberOfForums;   
+            var index = 11;
 
-            var numberOfConferences = Convert.ToInt32(lines[10].Trim());
-
-            int index = 11;
-            for (int i = 0; i <= numberOfConferences; i++)
+            for (int i=0;i<=numberOfConferences+1;i++)
             {
                 var confNumber = lines[index].Trim();
                 var confName = lines[index + 1].Trim();
@@ -111,22 +117,28 @@ namespace QWK
                 {
                     ID = confNumber,
                     Name = confName,
-                    NumberOfMessages = 0
+                    NumberOfMessages = GetForumNumberOfMessages(tmpdir, confNumber)
                 });
-
                 index += 2;
             }
 
             return foruns;
         }
 
+        public static Int32 GetForumNumberOfMessages(string tmpdir, string forumId)
+        {
+            var pointers = OpenNDXFile(tmpdir, forumId);
+            if (pointers.Length < 5) return 0;
+            int NumOfMessages = pointers.Length / 5;
+            return NumOfMessages;
+        }
+       
         public static List<Message> GetForumMessages(string tmpdir, string forumId)
         {
             var result = new List<Message>();
             var fileName = tmpdir + forumId + ".NDX";
 
-            if (!File.Exists(fileName))
-                return result;
+            if (!File.Exists(fileName)) return result;
 
             var fileContent = File.ReadAllBytes(fileName);
             var messagePointers = new List<MessagePointer>();
@@ -135,7 +147,6 @@ namespace QWK
             {
                 var bytes = new byte[] { fileContent[i], fileContent[i + 1], fileContent[i + 2], fileContent[i + 3] };
                 var offset = BitConverter.ToUInt32(bytes, 0) * 128;
-
                 messagePointers.Add(new MessagePointer() { messageBytesLocation = offset });
             }
 
