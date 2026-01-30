@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using QWK;
 using SharpQWKReader.Web.Configuration;
 using SharpQWKReader.Web.Models;
 using SharpQWKReader.Web.Services;
